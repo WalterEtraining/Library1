@@ -20,15 +20,15 @@
   "mbit_Motor.Fan|block": "fan|port %pin|speed %value",
   "mbit_Motor.Servo|block": "servo|port %pin|angle %value",
 
-  "mbit_Robot.RGB_Car_Big|block": "robot RGB light|red %value1|green %value2|blue %value3",
-  "mbit_Robot.RGB_Car_Big2|block": "robot RGB light|select car light color %value",
-  "mbit_Robot.Ultrasonic_Car|block": "return distance (cm)",
-  "mbit_Robot.RGB_Car_Program|block": "RGB flow light",
-  "mbit_Robot.Music_Car|block": "robot music play|%index",
-  "mbit_Robot.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
-  "mbit_Robot.Avoid_Sensor|block": "avoid obstacle sensor|detected %value",
-  "mbit_Robot.Servo_Car|block": "robot servo|index %num|angle %value",
-  "mbit_Robot.CarCtrl|block": "robot control|%index",
-  "mbit_Robot.CarCtrlSpeed|block": "robot control|%index|speed %speed",
-  "mbit_Robot.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
+  "mbit_Mover.RGB_Car_Big|block": "robot RGB light|red %value1|green %value2|blue %value3",
+  "mbit_Mover.RGB_Car_Big2|block": "robot RGB light|select car light color %value",
+  "mbit_Mover.Ultrasonic_Car|block": "return distance (cm)",
+  "mbit_Mover.RGB_Car_Program|block": "RGB flow light",
+  "mbit_Mover.Music_Car|block": "robot music play|%index",
+  "mbit_Mover.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
+  "mbit_Mover.Avoid_Sensor|block": "avoid obstacle sensor|detected %value",
+  "mbit_Mover.Servo_Car|block": "robot servo|index %num|angle %value",
+  "mbit_Mover.CarCtrl|block": "robot control|%index",
+  "mbit_Mover.CarCtrlSpeed|block": "robot control|%index|speed %speed",
+  "mbit_Mover.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
 }

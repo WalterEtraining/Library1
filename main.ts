@@ -430,7 +430,7 @@ namespace mbit_Motor {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace mbit_Robot {
+namespace mbit_Mover {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
