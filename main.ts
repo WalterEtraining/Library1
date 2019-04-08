@@ -194,12 +194,12 @@ namespace Tab_Control_Ultrasonido {
             control.waitMicros(13);
         }
     }
-    //% blockId=Tab_Control_IR_Sensor block="IR_Sensor|pin %pin| |%value|Obstaculo"
+    //% blockId=Tab_Control_Sensor_Infrarrojo block="Sensor_Infrarrojo|pin %pin| |%value|Obstaculo"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function IR_Sensor(pin: DigitalPin, value: enIR): boolean {
+    export function Sensor_Infrarrojo(pin: DigitalPin, value: enIR): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
         //IR_send_38k();
@@ -212,24 +212,24 @@ namespace Tab_Control_Ultrasonido {
 
     }
 
-    //% blockId=Tab_Control_IR_Send block="IR_Send|pin %pin"
+    //% blockId=Tab_Control_Enviar_Infrarrojo block="Enviar_Infrarrojo|pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function IR_Send(pin: DigitalPin): void {
+    export function Enviar_Infrarrojo(pin: DigitalPin): void {
 
         
         IR_send_38k();
 
     }
    
-    //% blockId=Tab_Control_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=Tab_Control_Ultrasonico block="Ultrasonico|Trig %Trig|Echo %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Ultrasonic(Trig: DigitalPin, Echo: DigitalPin): number {
+    export function Ultrasonico(Trig: DigitalPin, Echo: DigitalPin): number {
 
         // send pulse
         pins.setPull(Trig, PinPullMode.PullNone);
