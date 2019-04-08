@@ -10,7 +10,7 @@
   "Tab_Control_Input.Rocker|block": "rocker|VRX %pin1|VRY %pin2|SW %pin3|return %value",
   "Tab_Control_Input.Button|block": "button|port %pin|return %value",
 
-  "Tab_Control_Ultrasonido.Voice_Sensor|block": "sounds sensor|port %pin|return %value",
+  "Tab_Control_Ultrasonido.Sensor_Voz|block": "sounds sensor|port %pin|return %value",
   "Tab_Control_Ultrasonido.IR_Sensor|block": "Infrared sensor|port %pin|  |%value|obstacle",
   "Tab_Control_Ultrasonido.IR_Send|block": "Infrared transmitter|port %pin",
   "Tab_Control_Ultrasonido.Ultrasonic|block": "ultrasonic|TX port %Trig|RX port %Echo",

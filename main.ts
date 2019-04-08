@@ -183,7 +183,7 @@ namespace Tab_Control_Ultrasonido {
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Voice_Sensor(pin: DigitalPin, value: enVoice): boolean {
+    export function Sensor_Voz(pin: DigitalPin, value: enVoice): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
         if (pins.digitalReadPin(pin) == value) {
