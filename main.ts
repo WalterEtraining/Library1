@@ -363,16 +363,16 @@ namespace Tab_Control_Entrada {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace Tab_Control_Music {
+namespace Tab_Control_Musica {
     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="silence"
+        //% blockId="NoBeep" block="Silencio"
         NoBeep = 0,
-        //% blockId="Beep" block="sound"
+        //% blockId="Beep" block="Sonido"
         Beep
     }
 
-    //% blockId=Tab_Control_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=Tab_Control_Buzzer block="Buzzer|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
