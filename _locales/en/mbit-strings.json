@@ -11,7 +11,7 @@
   "Tab_Control_Input.Button|block": "button|port %pin|return %value",
 
   "Tab_Control_Ultrasonido.Sensor_Voz|block": "sounds sensor|port %pin|return %valor",
-  "Tab_Control_Ultrasonido.IR_Sensor|block": "Infrared sensor|port %pin|  |%value|obstacle",
+  "Tab_Control_Ultrasonido.IR_Sensor|block": "Infrared sensor|port %pin|  |%value|Obstaculo",
   "Tab_Control_Ultrasonido.IR_Send|block": "Infrared transmitter|port %pin",
   "Tab_Control_Ultrasonido.Ultrasonic|block": "ultrasonic|TX port %Trig|RX port %Echo",
 

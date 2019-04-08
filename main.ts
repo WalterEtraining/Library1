@@ -1,13 +1,4 @@
-﻿/*
-Copyright (C): 2010-2019, Shenzhen Yahboom Tech
-modified from liusen
-load dependency
-"Tab_Control": "file:../pxt-Tab_Control"
-*/
-
-
-
-//% color="#C814B8" weight=25 icon="\uf1d4"
+﻿//% color="#C814B8" weight=25 icon="\uf1d4"
 namespace Tab_Control_Pantalla {
     
     export enum enColor {
@@ -38,7 +29,7 @@ namespace Tab_Control_Pantalla {
         ON =1
     }
 
-    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %valor"
+    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -49,7 +40,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %valor"
+    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -82,27 +73,27 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor1 %valor1|valor2 %valor2|valor3 %valor3"
+    //% blockId=Tab_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor1 %value1|valor2 %value2|valor3 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
-    //% valor1.min=0 valor1.max=255 valor2.min=0 valor2.max=255 valor3.min=0 valor3.max=255
+    //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, valor1: number, valor2: number, valor3: number): void {
+    export function RGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, value1: number, value2: number, value3: number): void {
 
-        pins.analogWritePin(pin1, valor1 * 1024 / 256);
-        pins.analogWritePin(pin2, valor2 * 1024 / 256);
-        pins.analogWritePin(pin3, valor3 * 1024 / 256);
+        pins.analogWritePin(pin1, value1 * 1024 / 256);
+        pins.analogWritePin(pin2, value2 * 1024 / 256);
+        pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor %valor"
+    //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB2(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, valor: enColor): void {
+    export function RGB2(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, value: enColor): void {
 
-        switch (valor) {
+        switch (value) {
             case enColor.OFF: {
                 pins.digitalWritePin(pin1, 0);
                 pins.digitalWritePin(pin2, 0);
@@ -164,29 +155,29 @@ namespace Tab_Control_Pantalla {
 namespace Tab_Control_Ultrasonido {
 
     export enum enVoice {
-        //% blockId="Voice" block="sound"
+        //% blockId="Voice" block="Sonido"
         Voice = 0,
-        //% blockId="NoVoice" block="silence"
+        //% blockId="NoVoice" block="Silencio"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="detected"
+        //% blockId="Get" block="Detectado"
         Get = 0,
-        //% blockId="NoVoice" block="undetected"
+        //% blockId="NoVoice" block="No Detectado"
         NoGet = 1
     }
     
 
-    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|valor %valor"
+    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Sensor_Voz(pin: DigitalPin, valor: enVoice): boolean {
+    export function Sensor_Voz(pin: DigitalPin, value: enVoice): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
-        if (pins.digitalReadPin(pin) == valor) {
+        if (pins.digitalReadPin(pin) == value) {
             return true;
         }
         else {
@@ -203,7 +194,7 @@ namespace Tab_Control_Ultrasonido {
             control.waitMicros(13);
         }
     }
-    //% blockId=Tab_Control_IR_Sensor block="IR_Sensor|pin %pin| |%value|obstacle"
+    //% blockId=Tab_Control_IR_Sensor block="IR_Sensor|pin %pin| |%value|Obstaculo"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
