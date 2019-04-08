@@ -6,9 +6,9 @@
   "Tab_Control_Pantalla.RGB|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|red %valor1|green %valor2|blue %valor3",
   "Tab_Control_Pantalla.RGB2|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|Display %valor",
 
-  "Tab_Control_Input.TouchPad|block": "touch switch|port %pin|return %value",
-  "Tab_Control_Input.Rocker|block": "rocker|VRX %pin1|VRY %pin2|SW %pin3|return %value",
-  "Tab_Control_Input.Button|block": "button|port %pin|return %value",
+  "Tab_Control_Entrada.TouchPad|block": "touch switch|port %pin|return %value",
+  "Tab_Control_Entrada.Rocker|block": "rocker|VRX %pin1|VRY %pin2|SW %pin3|return %value",
+  "Tab_Control_Entrada.Button|block": "button|port %pin|return %value",
 
   "Tab_Control_Ultrasonido.Sensor_Voz|block": "sounds sensor|port %pin|return %valor",
   "Tab_Control_Ultrasonido.Sensor_Infrarrojo|block": "Infrared sensor|port %pin|  |%value|Obstaculo",

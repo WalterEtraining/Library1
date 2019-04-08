@@ -250,27 +250,27 @@ namespace Tab_Control_Ultrasonido {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace Tab_Control_Input {
+namespace Tab_Control_Entrada {
 
     export enum enRocker {
         //% blockId="Nostate" block="No"
         Nostate = 0,
-        //% blockId="Up" block="up"
+        //% blockId="Up" block="Arriba"
         Up,
-        //% blockId="Down" block="down"
+        //% blockId="Down" block="Abajo"
         Down,
-        //% blockId="Left" block="left"
+        //% blockId="Left" block="Izquierda"
         Left,
-        //% blockId="Right" block="right"
+        //% blockId="Right" block="Derecha"
         Right,
-        //% blockId="Press" block="press"
+        //% blockId="Press" block="Presión"
         Press
     }
 
     export enum enTouch {
-        //% blockId="NoTouch" block="untouched"
+        //% blockId="NoTouch" block="Sin Pulso"
         NoTouch = 0,
-        //% blockId="Touch" block="touched"
+        //% blockId="Touch" block="Pulso"
         Touch = 1
     }
     export enum enButton {
