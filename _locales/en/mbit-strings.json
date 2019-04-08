@@ -1,10 +1,10 @@
 {
 
-  "Tab_Control_Pantalla.LED1|block": "LED|Pin %pin|state %value",
-  "Tab_Control_Pantalla.LED2|block": "LED|Pin %pin|lightness %value",
+  "Tab_Control_Pantalla.LED1|block": "LED|Pin %pin|state %valor",
+  "Tab_Control_Pantalla.LED2|block": "LED|Pin %pin|lightness %valor",
   "Tab_Control_Pantalla.BreathLED|block": "breath light|port %pin",
   "Tab_Control_Pantalla.RGB|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|red %valor1|green %valor2|blue %valor3",
-  "Tab_Control_Pantalla.RGB2|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|Display %value",
+  "Tab_Control_Pantalla.RGB2|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|Display %valor",
 
   "Tab_Control_Input.TouchPad|block": "touch switch|port %pin|return %value",
   "Tab_Control_Input.Rocker|block": "rocker|VRX %pin1|VRY %pin2|SW %pin3|return %value",

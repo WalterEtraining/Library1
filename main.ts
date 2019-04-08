@@ -38,7 +38,7 @@ namespace Tab_Control_Pantalla {
         ON =1
     }
 
-    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %value"
+    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %valor"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -49,7 +49,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %value"
+    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %valor"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -95,14 +95,14 @@ namespace Tab_Control_Pantalla {
         pins.analogWritePin(pin3, valor3 * 1024 / 256);
 
     }
-    //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor %valor"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB2(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, value: enColor): void {
+    export function RGB2(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, valor: enColor): void {
 
-        switch (value) {
+        switch (valor) {
             case enColor.OFF: {
                 pins.digitalWritePin(pin1, 0);
                 pins.digitalWritePin(pin2, 0);
