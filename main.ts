@@ -38,7 +38,7 @@ namespace Tab_Control_Pantalla {
         ON =1
     }
 
-    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
