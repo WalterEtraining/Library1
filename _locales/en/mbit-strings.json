@@ -1,10 +1,10 @@
 {
 
-  "mbit_Display.LED1|block": "LED|Pin %pin|state %value",
-  "mbit_Display.LED2|block": "LED|Pin %pin|lightness %value",
-  "mbit_Display.BreathLED|block": "breath light|port %pin",
-  "mbit_Display.RGB|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|red %value1|green %value2|blue %value3",
-  "mbit_Display.RGB2|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|Display %value",
+  "mbit_Pantalla.LED1|block": "LED|Pin %pin|state %value",
+  "mbit_Pantalla.LED2|block": "LED|Pin %pin|lightness %value",
+  "mbit_Pantalla.BreathLED|block": "breath light|port %pin",
+  "mbit_Pantalla.RGB|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|red %value1|green %value2|blue %value3",
+  "mbit_Pantalla.RGB2|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|Display %value",
 
   "mbit_Input.TouchPad|block": "touch switch|port %pin|return %value",
   "mbit_Input.Rocker|block": "rocker|VRX %pin1|VRY %pin2|SW %pin3|return %value",
