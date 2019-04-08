@@ -1,6 +1,6 @@
 {
 
-  "Tab_Control_Pantalla.LED1|block": "LED|Pin %pin|state %valor",
+  "Tab_Control_Pantalla.LED1|block": "LED|Pin %pin|state %value",
   "Tab_Control_Pantalla.LED2|block": "LED|Pin %pin|lightness %value",
   "Tab_Control_Pantalla.BreathLED|block": "breath light|port %pin",
   "Tab_Control_Pantalla.RGB|block": "RGB LED|portR %pin1|portG %pin2|portB %pin3|red %value1|green %value2|blue %value3",
