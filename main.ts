@@ -12,29 +12,29 @@ namespace Tab_Control_Pantalla {
     
     export enum enColor {
 
-        //% blockId="OFF" block="off"
+        //% blockId="OFF" block="Apagado"
         OFF = 0,
-        //% blockId="Red" block="red"
+        //% blockId="Red" block="Rojo"
         Red,
-        //% blockId="Green" block="green"
+        //% blockId="Green" block="Verde"
         Green,
-        //% blockId="Blue" block="blue"
+        //% blockId="Blue" block="Azul"
         Blue,
-        //% blockId="White" block="white"
+        //% blockId="White" block="Blanco"
         White,
-        //% blockId="Cyan" block="cyan"
+        //% blockId="Cyan" block="Cian"
         Cyan,
-        //% blockId="Pinkish" block="magenta"
+        //% blockId="Pinkish" block="Magenta"
         Pinkish,
-        //% blockId="Yellow" block="yellow"
+        //% blockId="Yellow" block="Amarillo"
         Yellow,
 
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="off"
+        //% blockId="OFF" block="Apagado"
         OFF = 0,
-        //% blockId="ON" block="on"
+        //% blockId="ON" block="Encendido"
         ON =1
     }
 
@@ -178,15 +178,15 @@ namespace Tab_Control_Ultrasonido {
     }
     
 
-    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|value %value"
+    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|valor %valor"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Sensor_Voz(pin: DigitalPin, value: enVoice): boolean {
+    export function Sensor_Voz(pin: DigitalPin, valor: enVoice): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
-        if (pins.digitalReadPin(pin) == value) {
+        if (pins.digitalReadPin(pin) == valor) {
             return true;
         }
         else {

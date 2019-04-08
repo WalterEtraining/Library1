@@ -10,7 +10,7 @@
   "Tab_Control_输入类.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
   "Tab_Control_输入类.Button|block": "按键|引脚 %pin|返回 %value",
 
-  "Tab_Control_传感器类.Sensor_Voz|block": "声音传感器|引脚 %pin|返回 %value",
+  "Tab_Control_传感器类.Sensor_Voz|block": "声音传感器|引脚 %pin|返回 %valor",
   "Tab_Control_传感器类.IR_Sensor|block": "红外传感器|引脚 %pin|  |%value|障碍物",
   "Tab_Control_传感器类.IR_Send|block": "红外发射|引脚 %pin",
   "Tab_Control_传感器类.Ultrasonic|block": "超声波|发射管脚 %Trig|接收管脚 %Echo",
