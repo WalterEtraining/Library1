@@ -33,9 +33,9 @@ namespace Tab_Control_Pantalla {
     export enum enLED1 {
         
         //% blockId="OFF" block="off"
-        OFF = 0,
+        APAGADO = 0,
         //% blockId="ON" block="on"
-        ON =1
+        ENCENDIDO = 1
     }
 
     //% blockId=Tab_Control_LED1 block="LED1|pin %pin|value %value"
@@ -43,9 +43,9 @@ namespace Tab_Control_Pantalla {
     //% blockGap=8
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=1
-    export function LED1(pin: DigitalPin, value: enLED1): void {
+    export function LED1(pin: DigitalPin, valor: enLED1): void {
 
-        pins.digitalWritePin(pin, value);
+        pins.digitalWritePin(pin, valor);
 
     }
 
