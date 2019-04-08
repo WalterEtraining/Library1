@@ -49,7 +49,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -82,17 +82,17 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=Tab_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor1 %valor1|valor2 %valor2|valor3 %valor3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
-    //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
+    //% valor1.min=0 valor1.max=255 valor2.min=0 valor2.max=255 valor3.min=0 valor3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, value1: number, value2: number, value3: number): void {
+    export function RGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, valor1: number, valor2: number, valor3: number): void {
 
-        pins.analogWritePin(pin1, value1 * 1024 / 256);
-        pins.analogWritePin(pin2, value2 * 1024 / 256);
-        pins.analogWritePin(pin3, value3 * 1024 / 256);
+        pins.analogWritePin(pin1, valor1 * 1024 / 256);
+        pins.analogWritePin(pin2, valor2 * 1024 / 256);
+        pins.analogWritePin(pin3, valor3 * 1024 / 256);
 
     }
     //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
