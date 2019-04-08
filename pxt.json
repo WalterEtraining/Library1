@@ -6,7 +6,7 @@
     "dependencies": {
         "core": "*",
         "neopixel": "github:microsoft/pxt-neopixel#v0.3.10",
-        "Tabla_Control_IR":  "github:lzty634158/yahboom_Tabla_Control_IR"
+        "Mbit_IR":  "github:lzty634158/yahboom_mbit_IR"
 	
 
     },
