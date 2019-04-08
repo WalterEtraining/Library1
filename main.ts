@@ -161,7 +161,7 @@ namespace Tab_Control_Pantalla {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace Tab_Control_Sensor {
+namespace Tab_Control_Ultrasonido {
 
     export enum enVoice {
         //% blockId="Voice" block="sound"
