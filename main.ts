@@ -300,7 +300,7 @@ namespace Tab_Control_Entrada {
     //% weight=100
     //% blockGap=10
     //% color="#808080"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
     export function Rocker(pin1: AnalogPin, pin2: AnalogPin, pin3: DigitalPin, value: enRocker): boolean {
 
         pins.setPull(pin3, PinPullMode.PullUp);
