@@ -178,7 +178,7 @@ namespace Tab_Control_Ultrasonido {
     }
     
 
-    //% blockId=Tab_Control_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
