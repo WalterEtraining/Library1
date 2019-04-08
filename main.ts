@@ -8,7 +8,7 @@ load dependency
 
 
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace mbit_Display {
+namespace Tabla_Control_Pantalla {
     
     export enum enColor {
 
@@ -38,7 +38,7 @@ namespace mbit_Display {
         ON =1
     }
 
-    //% blockId=mbit_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=Tabla_Control_LED1 block="LED1|pin %pin|value %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -49,7 +49,7 @@ namespace mbit_Display {
 
     }
 
-    //% blockId=mbit_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=Tabla_Control_LED2 block="LED2|pin %pin|value %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -61,7 +61,7 @@ namespace mbit_Display {
 
     }
 
-    //% blockId=mbit_BreathLED block="BreathLED|pin %pin"
+    //% blockId=Tabla_Control_BreathLED block="BreathLED|pin %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -82,7 +82,7 @@ namespace mbit_Display {
 
     }
 
-    //% blockId=mbit_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=Tabla_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -95,7 +95,7 @@ namespace mbit_Display {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=mbit_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=Tabla_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -161,7 +161,7 @@ namespace mbit_Display {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace mbit_Sensor {
+namespace Tabla_Control_Ultrasonido {
 
     export enum enVoice {
         //% blockId="Voice" block="sound"
@@ -178,7 +178,7 @@ namespace mbit_Sensor {
     }
     
 
-    //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=Tabla_Control_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -203,7 +203,7 @@ namespace mbit_Sensor {
             control.waitMicros(13);
         }
     }
-    //% blockId=mbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|obstacle"
+    //% blockId=Tabla_Control_IR_Sensor block="IR_Sensor|pin %pin| |%value|obstacle"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -221,7 +221,7 @@ namespace mbit_Sensor {
 
     }
 
-    //% blockId=mbit_IR_Send block="IR_Send|pin %pin"
+    //% blockId=Tabla_Control_IR_Send block="IR_Send|pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -233,7 +233,7 @@ namespace mbit_Sensor {
 
     }
    
-    //% blockId=mbit_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% blockId=Tabla_Control_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -255,11 +255,11 @@ namespace mbit_Sensor {
 }
 
 /*****************************************************************************************************************************************
- *  Input *****************************************************************************************************************************
+ *  Entrada *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace mbit_Input {
+namespace Tabla_Control_Entrada {
 
     export enum enRocker {
         //% blockId="Nostate" block="No"
@@ -289,7 +289,7 @@ namespace mbit_Input {
         Realse = 1
     }
 
-    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=Tabla_Control_TouchPad block="TouchPad|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -305,7 +305,7 @@ namespace mbit_Input {
         }
 
     }
-    //% blockId=mbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=Tabla_Control_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -349,7 +349,7 @@ namespace mbit_Input {
 
     }
 
-    //% blockId=mbit_Button block="Button|pin %pin|value %value"
+    //% blockId=Tabla_Control_Button block="Button|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -372,7 +372,7 @@ namespace mbit_Input {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace mbit_Music {
+namespace Tabla_Control_Musica {
     export enum enBuzzer {
 
         //% blockId="NoBeep" block="silence"
@@ -381,7 +381,7 @@ namespace mbit_Music {
         Beep
     }
 
-    //% blockId=mbit_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=Tabla_Control_Buzzer block="Buzzer|pin %pin|value %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -401,9 +401,9 @@ namespace mbit_Music {
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace mbit_Motor {
+namespace Tabla_Control_Motor {
 
-    //% blockId=mbit_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=Tabla_Control_Fan block="Fan|pin %pin|speed %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -415,7 +415,7 @@ namespace mbit_Motor {
 
     }
 
-    //% blockId=mbit_Servo block="Servo|pin %pin|value %value"
+    //% blockId=Tabla_Control_Servo block="Servo|pin %pin|value %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -430,7 +430,7 @@ namespace mbit_Motor {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace mbit_Mover {
+namespace Tabla_Control_Desplazar{
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -798,7 +798,7 @@ namespace mbit_Mover {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=Tabla_Control_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -856,7 +856,7 @@ namespace mbit_Mover {
             }
         }
     }
-    //% blockId=mbit_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=Tabla_Control_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -881,7 +881,7 @@ namespace mbit_Mover {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=Tabla_Control_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -895,7 +895,7 @@ namespace mbit_Mover {
     }
 
 
-	//% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
+	//% blockId=Tabla_Control_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -915,7 +915,7 @@ namespace mbit_Mover {
         return  Math.floor(d / 58);
     }
 
-    //% blockId=mbit_Music_Car block="Music_Car|%index"
+    //% blockId=Tabla_Control_Musica_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -944,7 +944,7 @@ namespace mbit_Mover {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=mbit_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=Tabla_Control_Servo_Car block="Servo_Car|num %num|value %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -959,7 +959,7 @@ namespace mbit_Mover {
 
     }
 
-    //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=Tabla_Control_Avoid_Sensor block="Avoid_Sensor|value %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -999,7 +999,7 @@ namespace mbit_Mover {
         return temp;
 
     }
-    //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=Tabla_Control_Line_Sensor block="Line_Sensor|direct %direct|value %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1044,7 +1044,7 @@ namespace mbit_Mover {
         return temp;
 
     }
-    //% blockId=mbit_CarCtrl block="CarCtrl|%index"
+    //% blockId=Tabla_Control_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1060,7 +1060,7 @@ namespace mbit_Mover {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=Tabla_Control_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -1077,7 +1077,7 @@ namespace mbit_Mover {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=Tabla_Control_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
