@@ -274,13 +274,13 @@ namespace Tab_Control_Entrada {
         Touch = 1
     }
     export enum enButton {
-        //% blockId="Press" block="press"
+        //% blockId="Press" block="Pulso"
         Press = 0,
-        //% blockId="Realse" block="release"
+        //% blockId="Realse" block="Sin Pulso"
         Realse = 1
     }
 
-    //% blockId=Tab_Control_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=Tab_Control_TouchPad block="TouchPad|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -296,11 +296,11 @@ namespace Tab_Control_Entrada {
         }
 
     }
-    //% blockId=Tab_Control_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=Tab_Control_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function Rocker(pin1: AnalogPin, pin2: AnalogPin, pin3: DigitalPin, value: enRocker): boolean {
 
         pins.setPull(pin3, PinPullMode.PullUp);
@@ -340,7 +340,7 @@ namespace Tab_Control_Entrada {
 
     }
 
-    //% blockId=Tab_Control_Button block="Button|pin %pin|value %value"
+    //% blockId=Tab_Control_Button block="Button|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
