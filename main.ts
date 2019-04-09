@@ -847,13 +847,13 @@ namespace Tab_Control_Robot {
             }
         }
     }
-    //% blockId=Tab_Control_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=Tab_Control_RGB_Tab_Control_X3 block="RGB_Tab_Control_X3|valor1 %value1|valor1 %value2|valor1 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Car_Big(value1: number, value2: number, value3: number): void {
+    export function RGB_Tab_Control_X3(value1: number, value2: number, value3: number): void {
 
         let R = value1 * 16;
         let G = value2 * 16;
@@ -872,12 +872,12 @@ namespace Tab_Control_Robot {
 
     }
 
-    //% blockId=Tab_Control_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=Tab_Control_RGB_Programa_Robot block="RGB_Programa_Robot"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Car_Program(): neopixel.Strip {
+    export function RGB_Programa_Robot(): neopixel.Strip {
          
         if (!yahStrip) {
             yahStrip = neopixel.create(DigitalPin.P16, 3, NeoPixelMode.RGB);
@@ -886,12 +886,12 @@ namespace Tab_Control_Robot {
     }
 
 
-	//% blockId=Tab_Control_ultrasonic_car block="ultrasonic return distance(cm)"
+	//% blockId=Tab_Control_Ultrasonido_Robot block="Ultrasonido retorna distancia(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Ultrasonic_Car(): number {
+    export function Ultrasonido_Robot(): number {
 
         // send pulse
         pins.setPull(DigitalPin.P14, PinPullMode.PullNone);
@@ -906,12 +906,12 @@ namespace Tab_Control_Robot {
         return  Math.floor(d / 58);
     }
 
-    //% blockId=Tab_Control_Music_Car block="Music_Car|%index"
+    //% blockId=Tab_Control_Musica_Robot block="Musica_Robot|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Music_Car(index: enMusic): void {
+    export function Musica_Robot(index: enMusic): void {
         switch (index) {
             case enMusic.dadadum: music.beginMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once); break;
             case enMusic.birthday: music.beginMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once); break;
