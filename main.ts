@@ -1,5 +1,5 @@
 ﻿//% color="#C814B8" weight=25 icon="\uf1d4"
-namespace Tab_Control_Pantalla {
+namespace ePantalla {
     
     export enum enColor {
 
@@ -29,7 +29,7 @@ namespace Tab_Control_Pantalla {
         ON =1
     }
 
-    //% blockId=Tab_Control_LED1 block="LED1|pin %pin|valor %value"
+    //% blockId=eLED1 block="LED1|pin %pin|valor %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -40,7 +40,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_LED2 block="LED2|pin %pin|valor %value"
+    //% blockId=eLED2 block="LED2|pin %pin|valor %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -52,7 +52,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_BreathLED block="BreathLED|pin %pin"
+    //% blockId=eBreathLED block="BreathLED|pin %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -73,7 +73,7 @@ namespace Tab_Control_Pantalla {
 
     }
 
-    //% blockId=Tab_Control_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor1 %value1|valor2 %value2|valor3 %value3"
+    //% blockId=eRGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor1 %value1|valor2 %value2|valor3 %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -86,7 +86,7 @@ namespace Tab_Control_Pantalla {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=Tab_Control_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor %value"
+    //% blockId=eRGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|valor %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -152,7 +152,7 @@ namespace Tab_Control_Pantalla {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace Tab_Control_Ultrasonido {
+namespace eUltrasonido {
 
     export enum enVoice {
         //% blockId="Voice" block="Sonido"
@@ -169,7 +169,7 @@ namespace Tab_Control_Ultrasonido {
     }
     
 
-    //% blockId=Tab_Control_Sensor_Voz block="Sensor_Voz|pin %pin|valor %value"
+    //% blockId=eSensor_Voz block="Sensor_Voz|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -194,7 +194,7 @@ namespace Tab_Control_Ultrasonido {
             control.waitMicros(13);
         }
     }
-    //% blockId=Tab_Control_Sensor_Infrarrojo block="Sensor_Infrarrojo|pin %pin| |%value|Obstaculo"
+    //% blockId=eSensor_Infrarrojo block="Sensor_Infrarrojo|pin %pin| |%value|Obstaculo"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -212,7 +212,7 @@ namespace Tab_Control_Ultrasonido {
 
     }
 
-    //% blockId=Tab_Control_Enviar_Infrarrojo block="Enviar_Infrarrojo|pin %pin"
+    //% blockId=eEnviar_Infrarrojo block="Enviar_Infrarrojo|pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -224,7 +224,7 @@ namespace Tab_Control_Ultrasonido {
 
     }
    
-    //% blockId=Tab_Control_Ultrasonico block="Ultrasonico|Trig %Trig|Echo %Echo"
+    //% blockId=eUltrasonico block="Ultrasonico|Trig %Trig|Echo %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -250,7 +250,7 @@ namespace Tab_Control_Ultrasonido {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace Tab_Control_Entrada {
+namespace eEntrada {
 
     export enum enRocker {
         //% blockId="Nostate" block="No"
@@ -280,7 +280,7 @@ namespace Tab_Control_Entrada {
         Realse = 1
     }
 
-    //% blockId=Tab_Control_TouchPad block="TouchPad|pin %pin|valor %value"
+    //% blockId=eTouchPad block="TouchPad|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -296,7 +296,7 @@ namespace Tab_Control_Entrada {
         }
 
     }
-    //% blockId=Tab_Control_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|valor %value"
+    //% blockId=eRocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -340,7 +340,7 @@ namespace Tab_Control_Entrada {
 
     }
 
-    //% blockId=Tab_Control_Button block="Button|pin %pin|valor %value"
+    //% blockId=eButton block="Button|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -363,7 +363,7 @@ namespace Tab_Control_Entrada {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace Tab_Control_Musica {
+namespace eMusica {
     export enum enBuzzer {
 
         //% blockId="NoBeep" block="Silencio"
@@ -372,7 +372,7 @@ namespace Tab_Control_Musica {
         Beep
     }
 
-    //% blockId=Tab_Control_Buzzer block="Buzzer|pin %pin|valor %value"
+    //% blockId=eBuzzer block="Buzzer|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -392,9 +392,9 @@ namespace Tab_Control_Musica {
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace Tab_Control_Motor {
+namespace eMotor {
 
-    //% blockId=Tab_Control_Fan block="Fan|pin %pin|velocidad %value"
+    //% blockId=eFan block="Fan|pin %pin|velocidad %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -406,7 +406,7 @@ namespace Tab_Control_Motor {
 
     }
 
-    //% blockId=Tab_Control_Servo block="Servo|pin %pin|valor %value"
+    //% blockId=eServo block="Servo|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -421,7 +421,7 @@ namespace Tab_Control_Motor {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace Tab_Control_Robot {
+namespace eRobot {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -789,7 +789,7 @@ namespace Tab_Control_Robot {
      * *****************************************************************
      * @param index
      */
-    //% blockId=Tab_Control_RGB_Tab_Control block="RGB_Tab_Control|valor %value"
+    //% blockId=eRGB_Tab_Control block="RGB_Tab_Control|valor %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -847,13 +847,13 @@ namespace Tab_Control_Robot {
             }
         }
     }
-    //% blockId=Tab_Control_RGB_Tab_Control_X3 block="RGB_Tab_Control_X3|valor1 %value1|valor2 %value2|valor3 %value3"
+    //% blockId=eRGB_eX3 block="RGB_eX3|valor1 %value1|valor2 %value2|valor3 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Tab_Control_X3(value1: number, value2: number, value3: number): void {
+    export function RGB_eX3(value1: number, value2: number, value3: number): void {
 
         let R = value1 * 16;
         let G = value2 * 16;
@@ -872,7 +872,7 @@ namespace Tab_Control_Robot {
 
     }
 
-    //% blockId=Tab_Control_RGB_Programa_Robot block="RGB_Programa_Robot"
+    //% blockId=eRGB_Programa_Robot block="RGB_Programa_Robot"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -886,7 +886,7 @@ namespace Tab_Control_Robot {
     }
 
 
-	//% blockId=Tab_Control_Ultrasonido_Robot block="Ultrasonido retorna distancia(cm)"
+	//% blockId=eUltrasonido_Robot block="Ultrasonido retorna distancia(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
@@ -906,7 +906,7 @@ namespace Tab_Control_Robot {
         return  Math.floor(d / 58);
     }
 
-    //% blockId=Tab_Control_Musica_Robot block="Musica_Robot|%index"
+    //% blockId=eMusica_Robot block="Musica_Robot|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -935,7 +935,7 @@ namespace Tab_Control_Robot {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=Tab_Control_Servo_Motor block="Servo_Motor|número %num|valor %value"
+    //% blockId=eServo_Motor block="Servo_Motor|número %num|valor %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -950,7 +950,7 @@ namespace Tab_Control_Robot {
 
     }
 
-    //% blockId=Tab_Control_Sensor_Evitar block="Sensor_Evitar|valor %value"
+    //% blockId=eSensor_Evitar block="Sensor_Evitar|valor %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -990,7 +990,7 @@ namespace Tab_Control_Robot {
         return temp;
 
     }
-    //% blockId=Tab_Control_Sensor_Linea block="Sensor_Linea|directo %direct|valor %value"
+    //% blockId=eSensor_Linea block="Sensor_Linea|directo %direct|valor %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1035,7 +1035,7 @@ namespace Tab_Control_Robot {
         return temp;
 
     }
-    //% blockId=Tab_Control_Control_Robot block="Control_Robot|%index"
+    //% blockId=eControl_Robot block="Control_Robot|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1051,7 +1051,7 @@ namespace Tab_Control_Robot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=Tab_Control_Control_Robot_Velocidad block="Control_Robot_Velocidad|%index|velocidad %speed"
+    //% blockId=eControl_Robot_Velocidad block="Control_Robot_Velocidad|%index|velocidad %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -1068,7 +1068,7 @@ namespace Tab_Control_Robot {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
-    //% blockId=Tab_Control_Control_Robot_Velocidad_X2 block="Control_Robot_Velocidad_X2|%index|velocidad1 %speed1|velocidad2 %speed2"
+    //% blockId=eControl_Robot_Velocidad_X2 block="Control_Robot_Velocidad_X2|%index|velocidad1 %speed1|velocidad2 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
