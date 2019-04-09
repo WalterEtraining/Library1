@@ -20,15 +20,15 @@
   "Tab_Control_Motor.Fan|block": "fan|port %pin|speed %value",
   "Tab_Control_Motor.Servo|block": "servo|port %pin|angle %value",
 
-  "Tab_Control_Mover.RGB_Car_Big|block": "robot RGB light|red %value1|green %value2|blue %value3",
-  "Tab_Control_Mover.RGB_Car_Big2|block": "robot RGB light|select car light color %value",
-  "Tab_Control_Mover.Ultrasonic_Car|block": "return distance (cm)",
-  "Tab_Control_Mover.RGB_Car_Program|block": "RGB flow light",
-  "Tab_Control_Mover.Music_Car|block": "robot music play|%index",
-  "Tab_Control_Mover.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
-  "Tab_Control_Mover.Avoid_Sensor|block": "avoid obstacle sensor|detected %value",
-  "Tab_Control_Mover.Servo_Car|block": "robot servo|index %num|angle %value",
-  "Tab_Control_Mover.CarCtrl|block": "robot control|%index",
-  "Tab_Control_Mover.CarCtrlSpeed|block": "robot control|%index|speed %speed",
-  "Tab_Control_Mover.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
+  "Tab_Control_Robot.RGB_Tab_Control|block": "robot RGB light|red %value1|green %value2|blue %value3",
+  "Tab_Control_Robot.RGB_Car_Big2|block": "robot RGB light|select car light color %value",
+  "Tab_Control_Robot.Ultrasonic_Car|block": "return distance (cm)",
+  "Tab_Control_Robot.RGB_Car_Program|block": "RGB flow light",
+  "Tab_Control_Robot.Music_Car|block": "robot music play|%index",
+  "Tab_Control_Robot.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
+  "Tab_Control_Robot.Avoid_Sensor|block": "avoid obstacle sensor|detected %value",
+  "Tab_Control_Robot.Servo_Car|block": "robot servo|index %num|angle %value",
+  "Tab_Control_Robot.CarCtrl|block": "robot control|%index",
+  "Tab_Control_Robot.CarCtrlSpeed|block": "robot control|%index|speed %speed",
+  "Tab_Control_Robot.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
 }

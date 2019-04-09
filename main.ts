@@ -394,7 +394,7 @@ namespace Tab_Control_Musica {
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace Tab_Control_Motor {
 
-    //% blockId=Tab_Control_Fan block="Fan|pin %pin|speed %value"
+    //% blockId=Tab_Control_Fan block="Fan|pin %pin|velocidad %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -406,7 +406,7 @@ namespace Tab_Control_Motor {
 
     }
 
-    //% blockId=Tab_Control_Servo block="Servo|pin %pin|value %value"
+    //% blockId=Tab_Control_Servo block="Servo|pin %pin|valor %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -421,7 +421,7 @@ namespace Tab_Control_Motor {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace Tab_Control_Mover {
+namespace Tab_Control_Robot {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -447,21 +447,21 @@ namespace Tab_Control_Mover {
 
     export enum enColor {
 
-        //% blockId="OFF" block="off"
+        //% blockId="OFF" block="Apagado"
         OFF = 0,
-        //% blockId="Red" block="red"
+        //% blockId="Red" block="Rojo"
         Red,
-        //% blockId="Green" block="green"
+        //% blockId="Green" block="Verde"
         Green,
-        //% blockId="Blue" block="blue"
+        //% blockId="Blue" block="Azul"
         Blue,
-        //% blockId="White" block="white"
+        //% blockId="White" block="Blanco"
         White,
-        //% blockId="Cyan" block="cyan"
+        //% blockId="Cyan" block="Cian"
         Cyan,
-        //% blockId="Pinkish" block="magenta"
+        //% blockId="Pinkish" block="Magenta"
         Pinkish,
-        //% blockId="Yellow" block="yellow"
+        //% blockId="Yellow" block="Amarillo"
         Yellow,
 
     }
@@ -491,24 +491,24 @@ namespace Tab_Control_Mover {
     }
     export enum enPos {
 
-        //% blockId="LeftState" block="left state"
+        //% blockId="LeftState" block="Estado Izquierda"
         LeftState = 0,
-        //% blockId="RightState" block="right state"
+        //% blockId="RightState" block="Estado Derecha"
         RightState = 1
     }
 
     export enum enLineState {
-        //% blockId="White" block="white"
+        //% blockId="White" block="Blanco"
         White = 0,
-        //% blockId="Black" block="black"
+        //% blockId="Black" block="Negro"
         Black = 1
 
     }
     
     export enum enAvoidState {
-        //% blockId="OBSTACLE" block="with obstacles"
+        //% blockId="OBSTACLE" block="Con Obstaculos"
         OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="without obstacles"
+        //% blockId="NOOBSTACLE" block="Sin Obstaculos"
         NOOBSTACLE = 1
 
     }
@@ -521,19 +521,19 @@ namespace Tab_Control_Mover {
         S3
     }
     export enum CarState {
-        //% blockId="Car_Run" block="forward"
+        //% blockId="Car_Run" block="Adelante"
         Car_Run = 1,
-        //% blockId="Car_Back" block="back"
+        //% blockId="Car_Back" block="Atras"
         Car_Back = 2,
-        //% blockId="Car_Left" block="turn left"
+        //% blockId="Car_Left" block="Girar a la izquierda"
         Car_Left = 3,
-        //% blockId="Car_Right" block="turn right"
+        //% blockId="Car_Right" block="Girar a la derecha"
         Car_Right = 4,
-        //% blockId="Car_Stop" block="stop"
+        //% blockId="Car_Stop" block="Parar"
         Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="rotate left"
+        //% blockId="Car_SpinLeft" block="Rotar a la izquierda"
         Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="rotate right"
+        //% blockId="Car_SpinRight" block="Rotar a la derecha"
         Car_SpinRight = 7
     }
 
@@ -789,12 +789,12 @@ namespace Tab_Control_Mover {
      * *****************************************************************
      * @param index
      */
-    //% blockId=Tab_Control_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
+    //% blockId=Tab_Control_RGB_Tab_Control block="RGB_Tab_Control|valor %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Car_Big2(value: enColor): void {
+    export function RGB_Tab_Control(value: enColor): void {
 
         switch (value) {
             case enColor.OFF: {
