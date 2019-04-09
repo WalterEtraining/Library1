@@ -26,8 +26,8 @@
   "Tab_Control_Robot.RGB_Programa_Robot|block": "RGB flow light",
   "Tab_Control_Robot.Musica_Robot|block": "robot music play|%index",
   "Tab_Control_Robot.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
-  "Tab_Control_Robot.Avoid_Sensor|block": "avoid obstacle sensor|detected %value",
-  "Tab_Control_Robot.Servo_Car|block": "robot servo|index %num|angle %value",
+  "Tab_Control_Robot.Sensor_Evitar|block": "avoid obstacle sensor|detected %value",
+  "Tab_Control_Robot.Servo_Motor|block": "robot servo|index %num|angle %value",
   "Tab_Control_Robot.CarCtrl|block": "robot control|%index",
   "Tab_Control_Robot.CarCtrlSpeed|block": "robot control|%index|speed %speed",
   "Tab_Control_Robot.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"

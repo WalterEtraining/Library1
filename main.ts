@@ -847,7 +847,7 @@ namespace Tab_Control_Robot {
             }
         }
     }
-    //% blockId=Tab_Control_RGB_Tab_Control_X3 block="RGB_Tab_Control_X3|valor1 %value1|valor1 %value2|valor1 %value3"
+    //% blockId=Tab_Control_RGB_Tab_Control_X3 block="RGB_Tab_Control_X3|valor1 %value1|valor2 %value2|valor3 %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -935,13 +935,13 @@ namespace Tab_Control_Robot {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=Tab_Control_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=Tab_Control_Servo_Motor block="Servo_Motor|número %num|valor %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
-    export function Servo_Car(num: enServo, value: number): void {
+    export function Servo_Motor(num: enServo, value: number): void {
 
         // 50hz: 20,000 us
         let us = (value * 1800 / 180 + 600); // 0.6 ~ 2.4
@@ -950,12 +950,12 @@ namespace Tab_Control_Robot {
 
     }
 
-    //% blockId=Tab_Control_Avoid_Sensor block="Avoid_Sensor|value %value"
+    //% blockId=Tab_Control_Sensor_Evitar block="Sensor_Evitar|valor %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
-    export function Avoid_Sensor(value: enAvoidState): boolean {
+    export function Sensor_Evitar(value: enAvoidState): boolean {
 
         let temp: boolean = false;
         pins.digitalWritePin(DigitalPin.P9, 0);
@@ -990,12 +990,12 @@ namespace Tab_Control_Robot {
         return temp;
 
     }
-    //% blockId=Tab_Control_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=Tab_Control_Sensor_Linea block="Sensor_Linea|directo %direct|valor %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
-    export function Line_Sensor(direct: enPos, value: enLineState): boolean {
+    export function Sensor_Linea(direct: enPos, value: enLineState): boolean {
 
         let temp: boolean = false;
 
@@ -1035,12 +1035,12 @@ namespace Tab_Control_Robot {
         return temp;
 
     }
-    //% blockId=Tab_Control_CarCtrl block="CarCtrl|%index"
+    //% blockId=Tab_Control_Control_Robot block="Control_Robot|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
-    export function CarCtrl(index: CarState): void {
+    export function Control_Robot(index: CarState): void {
         switch (index) {
             case CarState.Car_Run: Car_run(255, 255); break;
             case CarState.Car_Back: Car_back(255, 255); break;
@@ -1051,13 +1051,13 @@ namespace Tab_Control_Robot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=Tab_Control_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=Tab_Control_Control_Robot_Velocidad block="Control_Robot_Velocidad|%index|velocidad %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
-    export function CarCtrlSpeed(index: CarState, speed: number): void {
+    export function Control_Robot_Velocidad(index: CarState, speed: number): void {
         switch (index) {
             case CarState.Car_Run: Car_run(speed, speed); break;
             case CarState.Car_Back: Car_back(speed, speed); break;
@@ -1068,13 +1068,13 @@ namespace Tab_Control_Robot {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
-    //% blockId=Tab_Control_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=Tab_Control_Control_Robot_Velocidad_X2 block="Control_Robot_Velocidad_X2|%index|velocidad1 %speed1|velocidad2 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
-    export function CarCtrlSpeed2(index: CarState, speed1: number, speed2: number): void {
+    export function Control_Robot_Velocidad_X2(index: CarState, speed1: number, speed2: number): void {
         switch (index) {
             case CarState.Car_Run: Car_run(speed1, speed2); break;
             case CarState.Car_Back: Car_back(speed1, speed2); break;
