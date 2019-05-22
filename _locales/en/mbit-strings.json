@@ -20,15 +20,15 @@
   "eMotor.Fan|block": "fan|port %pin|speed %value",
   "eMotor.Servo|block": "servo|port %pin|angle %value",
 
-  "eRobot.RGB_Tab_Control|block": "robot RGB light|red %value1|green %value2|blue %value3",
-  "eRobot.RGB_eX3|block": "robot RGB light|select car light color %value",
-  "eRobot.Ultrasonido_Robot|block": "return distance (cm)",
-  "eRobot.RGB_Programa_Robot|block": "RGB flow light",
-  "eRobot.Musica_Robot|block": "robot music play|%index",
-  "eRobot.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
-  "eRobot.Sensor_Evitar|block": "avoid obstacle sensor|detected %value",
-  "eRobot.Servo_Motor|block": "robot servo|index %num|angle %value",
-  "eRobot.CarCtrl|block": "robot control|%index",
-  "eRobot.CarCtrlSpeed|block": "robot control|%index|speed %speed",
-  "eRobot.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
+  "eBot.RGB_Tab_Control|block": "robot RGB light|red %value1|green %value2|blue %value3",
+  "eBot.RGB_eX3|block": "robot RGB light|select car light color %value",
+  "eBot.Ultrasonido_Robot|block": "return distance (cm)",
+  "eBot.RGB_Programa_Robot|block": "RGB flow light",
+  "eBot.Musica_Robot|block": "robot music play|%index",
+  "eBot.Line_Sensor|block": "tracking sensor|direct %direct|detected %value",
+  "eBot.Sensor_Evitar|block": "avoid obstacle sensor|detected %value",
+  "eBot.Servo_Motor|block": "robot servo|index %num|angle %value",
+  "eBot.CarCtrl|block": "robot control|%index",
+  "eBot.CarCtrlSpeed|block": "robot control|%index|speed %speed",
+  "eBot.CarCtrlSpeed2|block": "robot control|%index|speed1 %speed1|speed2 %speed2"
 }
